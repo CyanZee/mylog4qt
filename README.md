@@ -1,14 +1,22 @@
 # mylog4qt
 Qt日志系统log4qt的使用例程
+
 20190717 Qt日志系统log4qt使用
 
 ==============  log4qt日志系统使用方法  ====================
+
 方法一:直接使用log4qt的源码
+
 	1、下载源码https://sourceforge.net/projects/log4qt/（当前目录的文件夹log4qt为已经下载好的源码）
+	
 	2、将log4qt源码添加到工程中步骤：在工程的.pro文件上添加 include(log4qt/log4qt.pri)
+	
 	3、首先重要的一步：加载log4qt日志系统的配置文件QtLog4Qt.conf：
+	
 		在主程序中编写：
+		
 		#include "log4qt/propertyconfigurator.h"
+		
 		int main(...)
 		{
 			Log4Qt::PropertyConfigurator::configure("QtLog4Qt.conf");
